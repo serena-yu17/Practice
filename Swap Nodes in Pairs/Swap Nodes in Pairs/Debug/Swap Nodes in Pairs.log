@@ -1,0 +1,7 @@
+﻿  SwapNodesinPairs.cpp
+c:\onedrive\projects\console\practice\swap nodes in pairs\swap nodes in pairs\swapnodesinpairs.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\swap nodes in pairs\swap nodes in pairs\swapnodesinpairs.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\swap nodes in pairs\swap nodes in pairs\swapnodesinpairs.cpp(49): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\swap nodes in pairs\swap nodes in pairs\swapnodesinpairs.cpp(60): warning C4018: '<': signed/unsigned mismatch
+  Swap Nodes in Pairs.vcxproj -> C:\OneDrive\projects\Console\Practice\Swap Nodes in Pairs\Debug\Swap Nodes in Pairs.exe
+  Swap Nodes in Pairs.vcxproj -> C:\OneDrive\projects\Console\Practice\Swap Nodes in Pairs\Debug\Swap Nodes in Pairs.pdb (Partial PDB)
