@@ -1,0 +1,4 @@
+﻿  iterate list.cpp
+c:\onedrive\projects\iterate list\iterate list\iterate list.cpp(32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  iterate list.vcxproj -> C:\OneDrive\projects\iterate list\x64\Debug\iterate list.exe
+  iterate list.vcxproj -> C:\OneDrive\projects\iterate list\x64\Debug\iterate list.pdb (Full PDB)

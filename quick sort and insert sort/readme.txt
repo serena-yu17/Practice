@@ -1,0 +1,1 @@
+This was my practice implementing quick sort and insertion sort in C. The main() wrapper was written in C++ for convenience, but the core code is purely in C.

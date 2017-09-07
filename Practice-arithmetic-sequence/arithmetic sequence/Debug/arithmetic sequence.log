@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  arithmetic sequence.cpp
+c:\users\seren\onedrive\projects\arithmetic sequence\arithmetic sequence\arithmetic sequence.cpp(88): warning C4715: 'analyse': not all control paths return a value
+  arithmetic sequence.vcxproj -> c:\users\seren\OneDrive\projects\arithmetic sequence\Debug\arithmetic sequence.exe
+  arithmetic sequence.vcxproj -> c:\users\seren\OneDrive\projects\arithmetic sequence\Debug\arithmetic sequence.pdb (Full PDB)

@@ -1,0 +1,11 @@
+﻿  multiplication.cpp
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(39): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(39): warning C4101: 'j': unreferenced local variable
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(88): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(155): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(157): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(169): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(171): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\seren\onedrive\projects\multiplication\multiplication\multiplication.cpp(183): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  multiplication.vcxproj -> C:\Users\seren\OneDrive\projects\multiplication\x64\Debug\multiplication.exe
+  multiplication.vcxproj -> C:\Users\seren\OneDrive\projects\multiplication\x64\Debug\multiplication.pdb (Full PDB)

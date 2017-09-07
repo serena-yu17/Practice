@@ -1,0 +1,2 @@
+Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. 
+Written in C, and reused the code in my earlier project "quick sort and insertion sort".

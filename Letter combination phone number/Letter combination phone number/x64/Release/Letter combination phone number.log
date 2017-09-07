@@ -1,0 +1,8 @@
+﻿  stdafx.c
+  Letter_combination_phone_number.c
+Letter_combination_phone_number.c(65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Letter combination phone number.vcxproj -> C:\OneDrive\projects\Console\Letter combination phone number\x64\Release\Letter combination phone number.exe
+  Letter combination phone number.vcxproj -> C:\OneDrive\projects\Console\Letter combination phone number\x64\Release\Letter combination phone number.pdb (Full PDB)

@@ -1,0 +1,5 @@
+﻿  4Sum.cpp
+c:\onedrive\projects\console\4sum\4sum\4sum.cpp(69): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\4sum\4sum\4sum.cpp(72): warning C4018: '<': signed/unsigned mismatch
+  4Sum.vcxproj -> C:\OneDrive\projects\Console\4Sum\Debug\4Sum.exe
+  4Sum.vcxproj -> C:\OneDrive\projects\Console\4Sum\Debug\4Sum.pdb (Partial PDB)

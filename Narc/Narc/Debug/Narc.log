@@ -1,0 +1,4 @@
+﻿  Narc.cpp
+c:\onedrive\projects\narc\narc\narc.cpp(55): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+  Narc.vcxproj -> C:\OneDrive\projects\Narc\Debug\Narc.exe
+  Narc.vcxproj -> C:\OneDrive\projects\Narc\Debug\Narc.pdb (Full PDB)

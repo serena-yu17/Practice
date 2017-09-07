@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  for loop test.cpp
+c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(47): error C2374: 'elapsed': redefinition; multiple initialization
+  c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(39): note: see declaration of 'elapsed'
+c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(55): error C2374: 'elapsed': redefinition; multiple initialization
+  c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(39): note: see declaration of 'elapsed'
+c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(61): error C2374: 'elapsed': redefinition; multiple initialization
+  c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(39): note: see declaration of 'elapsed'
+c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(69): error C2374: 'elapsed': redefinition; multiple initialization
+  c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(39): note: see declaration of 'elapsed'
+c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(75): error C2374: 'elapsed': redefinition; multiple initialization
+  c:\users\seren\onedrive\projects\for loop test\for loop test\for loop test.cpp(39): note: see declaration of 'elapsed'

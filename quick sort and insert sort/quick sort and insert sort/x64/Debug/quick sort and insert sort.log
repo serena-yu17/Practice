@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  quick sort and insert sort.cpp
+c:\onedrive\projects\console\quick sort and insert sort\quick sort and insert sort\quick sort and insert sort.cpp(46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  quick sort and insert sort.vcxproj -> C:\OneDrive\projects\Console\quick sort and insert sort\x64\Debug\quick sort and insert sort.exe
+  quick sort and insert sort.vcxproj -> C:\OneDrive\projects\Console\quick sort and insert sort\x64\Debug\quick sort and insert sort.pdb (Partial PDB)

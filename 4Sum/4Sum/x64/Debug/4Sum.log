@@ -1,0 +1,4 @@
+﻿  4Sum.cpp
+c:\onedrive\projects\console\4sum\4sum\4sum.cpp(17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  4Sum.vcxproj -> C:\OneDrive\projects\Console\4Sum\x64\Debug\4Sum.exe
+  4Sum.vcxproj -> C:\OneDrive\projects\Console\4Sum\x64\Debug\4Sum.pdb (Partial PDB)

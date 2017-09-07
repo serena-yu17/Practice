@@ -1,0 +1,5 @@
+﻿  RSA.cpp
+c:\users\seren\documents\visual studio 2015\projects\rsa\rsa\rsa.cpp(16): warning C4101: 'keym': unreferenced local variable
+c:\users\seren\documents\visual studio 2015\projects\rsa\rsa\rsa.cpp(67): warning C4715: 'RSA': not all control paths return a value
+  RSA.vcxproj -> C:\Users\seren\Documents\Visual Studio 2015\Projects\RSA\x64\Debug\RSA.exe
+  RSA.vcxproj -> C:\Users\seren\Documents\Visual Studio 2015\Projects\RSA\x64\Debug\RSA.pdb (Full PDB)

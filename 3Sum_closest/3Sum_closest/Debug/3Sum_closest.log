@@ -1,0 +1,5 @@
+﻿  3Sumclosest.cpp
+c:\onedrive\projects\console\3sum_closest\3sum_closest\3sumclosest.cpp(173): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\3sum_closest\3sum_closest\3sumclosest.cpp(175): warning C4018: '<': signed/unsigned mismatch
+  3Sum_closest.vcxproj -> C:\OneDrive\projects\Console\3Sum_closest\Debug\3Sum_closest.exe
+  3Sum_closest.vcxproj -> C:\OneDrive\projects\Console\3Sum_closest\Debug\3Sum_closest.pdb (Partial PDB)

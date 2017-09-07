@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="x64"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x64">
+				<Option output="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/x64.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 x64"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x64/fast">
+				<Option output="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/x64.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 x64/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.log">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.obj">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.pch">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/CL.command.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/CL.read.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/CL.write.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/Integer to Roman.lastbuildstate">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/link.command.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/link.read.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/link.write.1.tlog">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/Integer to Roman.tlog/unsuccessfulbuild">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/stdafx.obj">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/vc141.idb">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/Debug/vc141.pdb">
+			<Option target="x64"/>
+		</Unit>
+		<Unit filename="C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

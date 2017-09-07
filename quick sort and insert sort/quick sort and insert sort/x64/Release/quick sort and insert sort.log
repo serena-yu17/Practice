@@ -1,0 +1,8 @@
+﻿  quick sort and insert sort.cpp
+quick sort and insert sort.cpp(32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  1 of 155 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  quick sort and insert sort.vcxproj -> C:\OneDrive\projects\Console\quick sort and insert sort\x64\Release\quick sort and insert sort.exe

@@ -1,0 +1,6 @@
+﻿  Twosum.cpp
+c:\onedrive\projects\console\two_sum\two_sum\twosum.cpp(29): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\two_sum\two_sum\twosum.cpp(48): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\two_sum\two_sum\twosum.cpp(49): warning C4018: '<': signed/unsigned mismatch
+  Two_sum.vcxproj -> C:\OneDrive\projects\Console\Two_sum\Debug\Two_sum.exe
+  Two_sum.vcxproj -> C:\OneDrive\projects\Console\Two_sum\Debug\Two_sum.pdb (Partial PDB)

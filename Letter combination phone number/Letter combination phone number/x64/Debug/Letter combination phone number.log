@@ -1,0 +1,4 @@
+﻿  Lettercombinationphonenumber.c
+c:\onedrive\projects\console\letter combination phone number\letter combination phone number\lettercombinationphonenumber.c(63): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Letter combination phone number.vcxproj -> C:\OneDrive\projects\Console\Letter combination phone number\x64\Debug\Letter combination phone number.exe
+  Letter combination phone number.vcxproj -> C:\OneDrive\projects\Console\Letter combination phone number\x64\Debug\Letter combination phone number.pdb (Partial PDB)

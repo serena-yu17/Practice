@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  Container With Most Water.cpp
+Container With Most Water.cpp(19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+Container With Most Water.cpp(59): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  All 189 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Container With Most Water.vcxproj -> C:\OneDrive\projects\Console\Container With Most Water\x64\Release\Container With Most Water.exe

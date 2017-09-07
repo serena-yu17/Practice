@@ -1,0 +1,7 @@
+﻿  RemoveNthNodeFromEndofList.cpp
+c:\onedrive\projects\console\remove nth node from end of list\remove nth node from end of list\removenthnodefromendoflist.cpp(33): warning C4018: '>': signed/unsigned mismatch
+c:\onedrive\projects\console\remove nth node from end of list\remove nth node from end of list\removenthnodefromendoflist.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\remove nth node from end of list\remove nth node from end of list\removenthnodefromendoflist.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\remove nth node from end of list\remove nth node from end of list\removenthnodefromendoflist.cpp(69): warning C4018: '<': signed/unsigned mismatch
+  Remove Nth Node From End of List.vcxproj -> C:\OneDrive\projects\Console\Remove Nth Node From End of List\Debug\Remove Nth Node From End of List.exe
+  Remove Nth Node From End of List.vcxproj -> C:\OneDrive\projects\Console\Remove Nth Node From End of List\Debug\Remove Nth Node From End of List.pdb (Partial PDB)

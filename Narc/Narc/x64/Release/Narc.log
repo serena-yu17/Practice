@@ -1,0 +1,9 @@
+﻿  Narc.cpp
+Narc.cpp(55): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+  Generating code
+  1 of 15 functions ( 6.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Narc.vcxproj -> C:\OneDrive\projects\Narc\x64\Release\Narc.exe
+  Narc.vcxproj -> C:\OneDrive\projects\Narc\x64\Release\Narc.pdb (Full PDB)

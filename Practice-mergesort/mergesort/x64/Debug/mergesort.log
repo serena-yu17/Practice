@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  mergesort.cpp
+c:\users\seren\onedrive\projects\mergesort\mergesort\mergesort.cpp(33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  mergesort.vcxproj -> C:\Users\seren\OneDrive\projects\mergesort\x64\Debug\mergesort.exe
+  mergesort.vcxproj -> C:\Users\seren\OneDrive\projects\mergesort\x64\Debug\mergesort.pdb (Full PDB)

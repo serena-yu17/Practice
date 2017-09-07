@@ -1,0 +1,12 @@
+﻿  sequence.cpp
+sequence.cpp(14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+sequence.cpp(28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+sequence.cpp(42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+sequence.cpp(68): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  18 of 142 functions (12.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  sequence.vcxproj -> C:\Users\seren\OneDrive\projects\sequence\x64\Release\sequence.exe
+  sequence.vcxproj -> C:\Users\seren\OneDrive\projects\sequence\x64\Release\sequence.pdb (Full PDB)

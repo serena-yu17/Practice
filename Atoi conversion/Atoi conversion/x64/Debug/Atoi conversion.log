@@ -1,0 +1,4 @@
+﻿  Atoi conversion.cpp
+c:\onedrive\projects\console\atoi conversion\atoi conversion\atoi conversion.cpp(62): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Atoi conversion.vcxproj -> C:\OneDrive\projects\Console\Atoi conversion\x64\Debug\Atoi conversion.exe
+  Atoi conversion.vcxproj -> C:\OneDrive\projects\Console\Atoi conversion\x64\Debug\Atoi conversion.pdb (Partial PDB)

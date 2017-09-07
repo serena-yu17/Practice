@@ -1,0 +1,3 @@
+C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/CMakeFiles/x64.dir
+C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,21 @@
+"C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\OneDrive\projects\Console\Integer to Roman\Integer to Roman\x64"
+-- The C compiler identification is GNU 7.1.0
+-- The CXX compiler identification is GNU 7.1.0
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+CMake Error: CMake can not determine linker language for target: x64
+CMake Error: Cannot determine link language for target "x64".
+-- Generating done
+-- Build files have been written to: C:/OneDrive/projects/Console/Integer to Roman/Integer to Roman/x64/cmake-build-debug
+Unable to determine product file path for target x64 (Debug). Running and debugging will be unavailable.

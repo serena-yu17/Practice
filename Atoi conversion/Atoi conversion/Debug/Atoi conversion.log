@@ -1,0 +1,6 @@
+﻿  Atoi conversion.cpp
+c:\users\seren\onedrive\projects\console\atoi conversion\atoi conversion\atoi conversion.cpp(19): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\seren\onedrive\projects\console\atoi conversion\atoi conversion\atoi conversion.cpp(46): warning C4244: '+=': conversion from 'double' to 'long', possible loss of data
+  Atoi conversion.vcxproj -> C:\Users\seren\OneDrive\projects\Console\Atoi conversion\Debug\Atoi conversion.exe
+  Atoi conversion.vcxproj -> C:\Users\seren\OneDrive\projects\Console\Atoi conversion\Debug\Atoi conversion.pdb (Partial PDB)

@@ -1,0 +1,6 @@
+C:\OneDrive\projects\LRC Cs\LRC Cs\bin\Debug\LRC Cs.exe.config
+C:\OneDrive\projects\LRC Cs\LRC Cs\bin\Debug\LRC Cs.exe
+C:\OneDrive\projects\LRC Cs\LRC Cs\bin\Debug\LRC Cs.pdb
+C:\OneDrive\projects\LRC Cs\LRC Cs\obj\Debug\LRC Cs.csprojResolveAssemblyReference.cache
+C:\OneDrive\projects\LRC Cs\LRC Cs\obj\Debug\LRC Cs.exe
+C:\OneDrive\projects\LRC Cs\LRC Cs\obj\Debug\LRC Cs.pdb

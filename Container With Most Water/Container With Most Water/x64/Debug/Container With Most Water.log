@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  Container With Most Water.cpp
+c:\onedrive\projects\console\container with most water\container with most water\container with most water.cpp(19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\onedrive\projects\console\container with most water\container with most water\container with most water.cpp(70): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Container With Most Water.vcxproj -> C:\OneDrive\projects\Console\Container With Most Water\x64\Debug\Container With Most Water.exe
+  Container With Most Water.vcxproj -> C:\OneDrive\projects\Console\Container With Most Water\x64\Debug\Container With Most Water.pdb (Partial PDB)

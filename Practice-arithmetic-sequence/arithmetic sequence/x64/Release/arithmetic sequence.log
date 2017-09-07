@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  arithmetic sequence.cpp
+arithmetic sequence.cpp(34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+arithmetic sequence.cpp(50): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+arithmetic sequence.cpp(64): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+arithmetic sequence.cpp(78): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  249 of 249 functions (100.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  arithmetic sequence.vcxproj -> C:\Users\seren\OneDrive\projects\arithmetic sequence\x64\Release\arithmetic sequence.exe
+  arithmetic sequence.vcxproj -> C:\Users\seren\OneDrive\projects\arithmetic sequence\x64\Release\arithmetic sequence.pdb (Full PDB)

@@ -1,0 +1,4 @@
+﻿  3Sum.cpp
+c:\onedrive\projects\console\3sum\3sum\3sum.cpp(75): warning C4101: 'size': unreferenced local variable
+  3Sum.vcxproj -> C:\OneDrive\projects\Console\3Sum\Debug\3Sum.exe
+  3Sum.vcxproj -> C:\OneDrive\projects\Console\3Sum\Debug\3Sum.pdb (Partial PDB)

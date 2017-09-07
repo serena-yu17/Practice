@@ -1,0 +1,97 @@
+This program tests the difference between using three loops separately and using one loop that integrates all the calculations. It also tests calling a function in 3 separate loops or 1 integrated loop.
+
+Run output on my laptop (windows 10):
+
+
+Input loops to run:
+100
+
+integrated_for:                 2.2e-06
+
+separate_for:                   3.4e-06
+
+integrated_function:                    2.2e-06
+
+separate_function:                      2.4e-06
+
+integrated_expensive:                   17.2838
+
+separate_expensive:                     17.3324
+
+Input loops to run:
+
+1000
+
+integrated_for:                 3.16e-05
+
+separate_for:                   3.03e-05
+
+integrated_function:                    2.65e-05
+
+separate_function:                      2.7e-05
+
+integrated_expensive:                   166.585
+
+separate_expensive:                     166.542
+
+Annotate out the "expensive" part and run 1E8 cycles:
+Input loops to run:
+
+100000000
+
+integrated_for:                 2.04765
+
+separate_for:                   2.11335
+
+integrated_function:                    2.09513
+
+separate_function:                      2.06923
+
+
+
+Using "inline" keyword for the one_plus, randomlist, and operation_expensive functions:
+Input loops to run:
+
+100
+
+integrated_for:                 3.4e-06
+
+separate_for:                   1.8e-06
+
+integrated_function:                    3.3e-06
+
+separate_function:                      2.3e-06
+
+integrated_expensive:                   16.6731
+
+separate_expensive:                     16.6632
+
+Input loops to run:
+
+1000
+
+integrated_for:                 3.15e-05
+
+separate_for:                   3.17e-05
+
+integrated_function:                    2.25e-05
+
+separate_function:                      2.03e-05
+
+integrated_expensive:                   167.214
+
+separate_expensive:                     166.951
+
+
+Annotate out the "expensive" part and run 1E8 cycles:
+Input loops to run:
+
+100000000
+
+integrated_for:                 2.03677
+
+separate_for:                   2.1018
+
+integrated_function:                    2.0807
+
+separate_function:                      2.06169

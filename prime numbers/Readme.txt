@@ -1,0 +1,1 @@
+This C++ program lists all prime number smaller than the given integer (like 1000).

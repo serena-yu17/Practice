@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  3Sumclosest.cpp
+3Sumclosest.cpp(173): warning C4018: '<': signed/unsigned mismatch
+3Sumclosest.cpp(175): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 155 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  3Sum_closest.vcxproj -> C:\OneDrive\projects\Console\3Sum_closest\Release\3Sum_closest.exe
+  3Sum_closest.vcxproj -> C:\OneDrive\projects\Console\3Sum_closest\Release\3Sum_closest.pdb (Full PDB)

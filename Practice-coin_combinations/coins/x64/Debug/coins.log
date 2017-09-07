@@ -1,0 +1,4 @@
+﻿  coins.cpp
+c:\users\seren\onedrive\projects\coins\coins\coins.cpp(38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  coins.vcxproj -> c:\users\seren\OneDrive\projects\coins\x64\Debug\coins.exe
+  coins.vcxproj -> c:\users\seren\OneDrive\projects\coins\x64\Debug\coins.pdb (Full PDB)

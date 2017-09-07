@@ -1,0 +1,4 @@
+﻿  Hammering distance.cpp
+c:\onedrive\projects\hammering distance\hammering distance\hammering distance.cpp(36): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  Hammering distance.vcxproj -> C:\OneDrive\projects\Hammering distance\Debug\Hammering distance.exe
+  Hammering distance.vcxproj -> C:\OneDrive\projects\Hammering distance\Debug\Hammering distance.pdb (Full PDB)

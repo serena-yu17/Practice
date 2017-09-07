@@ -1,0 +1,7 @@
+﻿  multiplication.cpp
+c:\onedrive\projects\console\multiplication\multiplication\multiplication.cpp(78): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\onedrive\projects\console\multiplication\multiplication\multiplication.cpp(83): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\onedrive\projects\console\multiplication\multiplication\multiplication.cpp(111): warning C4244: 'argument': conversion from 'ull' to 'ul', possible loss of data
+c:\onedrive\projects\console\multiplication\multiplication\multiplication.cpp(130): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  multiplication.vcxproj -> C:\OneDrive\projects\Console\multiplication\x64\Debug\multiplication.exe
+  multiplication.vcxproj -> C:\OneDrive\projects\Console\multiplication\x64\Debug\multiplication.pdb (Partial PDB)
