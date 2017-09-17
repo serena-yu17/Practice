@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  NexuPermutation.cpp
+c:\onedrive\projects\console\practice\nexupermutation\nexupermutation\nexupermutation.cpp(48): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\nexupermutation\nexupermutation\nexupermutation.cpp(51): warning C4018: '<': signed/unsigned mismatch
+  NexuPermutation.vcxproj -> C:\OneDrive\projects\Console\Practice\NexuPermutation\Debug\NexuPermutation.exe
+  NexuPermutation.vcxproj -> C:\OneDrive\projects\Console\Practice\NexuPermutation\Debug\NexuPermutation.pdb (Partial PDB)

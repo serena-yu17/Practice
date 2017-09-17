@@ -1,0 +1,4 @@
+﻿  DivideTwoIntegers.cpp
+c:\onedrive\projects\console\practice\divide two integers\divide two integers\dividetwointegers.cpp(40): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  Divide Two Integers.vcxproj -> C:\OneDrive\projects\Console\Practice\Divide Two Integers\Debug\Divide Two Integers.exe
+  Divide Two Integers.vcxproj -> C:\OneDrive\projects\Console\Practice\Divide Two Integers\Debug\Divide Two Integers.pdb (Partial PDB)
