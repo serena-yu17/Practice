@@ -1,0 +1,5 @@
+﻿  SearchinRotatedSortedArray.cpp
+c:\onedrive\projects\console\practice\search in rotated sorted array\search in rotated sorted array\searchinrotatedsortedarray.cpp(92): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+c:\onedrive\projects\console\practice\search in rotated sorted array\search in rotated sorted array\searchinrotatedsortedarray.cpp(107): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Search in Rotated Sorted Array.vcxproj -> C:\OneDrive\projects\Console\Practice\Search in Rotated Sorted Array\x64\Debug\Search in Rotated Sorted Array.exe
+  Search in Rotated Sorted Array.vcxproj -> C:\OneDrive\projects\Console\Practice\Search in Rotated Sorted Array\x64\Debug\Search in Rotated Sorted Array.pdb (Partial PDB)
