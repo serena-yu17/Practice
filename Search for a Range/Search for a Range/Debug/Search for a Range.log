@@ -1,0 +1,5 @@
+﻿  SearchforaRange.cpp
+c:\onedrive\projects\console\practice\search for a range\search for a range\searchforarange.cpp(16): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\search for a range\search for a range\searchforarange.cpp(19): warning C4018: '<': signed/unsigned mismatch
+  Search for a Range.vcxproj -> C:\OneDrive\projects\Console\Practice\Search for a Range\Debug\Search for a Range.exe
+  Search for a Range.vcxproj -> C:\OneDrive\projects\Console\Practice\Search for a Range\Debug\Search for a Range.pdb (Partial PDB)
