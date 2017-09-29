@@ -5,6 +5,7 @@
 #include <random>
 #include <stdio.h>
 int SIZE;
+int factor;
 using namespace std;
 
 typedef unsigned char byte;
@@ -212,7 +213,7 @@ void writebmp(point**);
 
 void setColor(point& pt, unsigned long count)
 {
-	int ratedCount = 188 * count / (SIZE*SIZE / 5);
+	int ratedCount = 188 * count / (SIZE*SIZE / factor);
 	pt.R = rainbow[ratedCount][0];
 	pt.G = rainbow[ratedCount][1];
 	pt.B = rainbow[ratedCount][2];
@@ -232,7 +233,7 @@ void randWalk()
 			map[j][i] = point();
 	}
 	int x = SIZE / 2, y = SIZE / 2;
-	while (x >= 0 && x < SIZE && y >= 0 && y < SIZE && count < SIZE*SIZE / 5)
+	while (x >= 0 && x < SIZE && y >= 0 && y < SIZE && count < SIZE*SIZE / factor)
 	{
 		int increX, increY;
 		do {
@@ -353,8 +354,8 @@ void writebmp(point** map)
 
 int main()
 {
-	puts("Input the size desired:");
-	scanf_s("%d", &SIZE);
+	puts("Input the size desired, and the factor, separated by space, e.g.: 1024 5:");
+	scanf_s("%d %d", &SIZE, &factor);
 	randWalk();
 	system("./random_walk.bmp");
 	return 0;

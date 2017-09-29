@@ -1,0 +1,4 @@
+﻿  nqueens.cpp
+c:\onedrive\projects\console\practice\n-queens\n-queens\nqueens.cpp(95): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+  n-queens.vcxproj -> C:\OneDrive\projects\Console\Practice\n-queens\x64\Debug\n-queens.exe
+  n-queens.vcxproj -> C:\OneDrive\projects\Console\Practice\n-queens\x64\Debug\n-queens.pdb (Partial PDB)
