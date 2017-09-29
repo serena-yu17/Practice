@@ -1,0 +1,1 @@
+Write a program random_walk.py that creates the picture of a random walk choosing at every step to move horizontally and vertically by at most 4 units, west or east and north or south, respectively—it is allowed to move only horizontally or only vertically, but not to stay in place.

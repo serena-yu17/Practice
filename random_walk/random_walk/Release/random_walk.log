@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  randomwalk.cpp
+randomwalk.cpp(235): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  2 of 86 functions ( 2.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+randomwalk.obj : warning LNK4020: a type record in 'c:\onedrive\projects\console\practice\random_walk\random_walk\release\vc141.pdb' is corrupted; some symbols and types may not be accessible from the debugger
+stdafx.obj : warning LNK4020: a type record in 'c:\onedrive\projects\console\practice\random_walk\random_walk\release\vc141.pdb' is corrupted; some symbols and types may not be accessible from the debugger
+  random_walk.vcxproj -> C:\OneDrive\projects\Console\Practice\random_walk\Release\random_walk.exe
+  random_walk.vcxproj -> C:\OneDrive\projects\Console\Practice\random_walk\Release\random_walk.pdb (Full PDB)
