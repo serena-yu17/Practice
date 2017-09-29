@@ -7,21 +7,30 @@
 #include <chrono>
 #include <sstream>
 #include <unordered_map>
+#include <unordered_set>
+#include <thread>
 using namespace std;
 
 int n;
 
 
-struct point
+class point
 {
+public:
 	int y;
 	int x;
-	int64_t* grid = NULL;
-	point* last = NULL;
+	int64_t* grid = new int64_t[n];
 	point(int x0, int y0)
 	{
 		x = x0;
 		y = y0;
+		memset(grid, -1, n * sizeof(int64_t));
+	}
+	point(point* pt, int y)
+	{
+		y = pt->y;
+		x = pt->x;
+		memcpy(grid + y, pt->grid + y, sizeof(int64_t)*(n - y));
 	}
 	bool operator==(point& other)
 	{
@@ -33,43 +42,76 @@ struct point
 	}
 	~point()
 	{
-		if (grid)
-			delete grid;
+		delete grid;
+	}
+};
+
+template<>
+struct hash<point*>
+{
+	size_t operator()(const point* pt) const
+	{
+		return (pt->x) << 16 + pt->y;
 	}
 };
 
 
-vector<point*>* bfs(vector<point*>* level, int y, vector<point*>& allPoints, unordered_map<int64_t, int>& pow2)
+void dfs(vector<int*>* result, int x0, int y0, unordered_map<int64_t, int>& pow2)
 {
-	vector<point*>* newLevel = new vector<point*>();
-	for (point* pt : *level)
+	vector<point*> stack;
+	point* root = new point(x0, y0);
+	int j = 1;
+	while (y0 + j < n)
 	{
-		while (pt->grid[y] & ((1 << n) - 1))
+		if (x0 + j < n)
+			root->grid[y0 + j] &= ~(1 << (x0 + j));
+		if (x0 - j > -1)
+			root->grid[y0 + j] &= ~(1 << (x0 - j));
+		root->grid[y0 + j] &= ~(1 << x0);
+		j++;
+	}
+	stack.push_back(root);
+	while (stack.size())
+	{
+
+		point* top = stack[stack.size() - 1];
+		point* nxt = NULL;
+		int y = top->y + 1;
+		if (stack.size() == n)
 		{
-			int64_t firstPosition = pt->grid[y] & (-pt->grid[y]);
+			int* res = new int[n];
+			for (int i = 0; i < n; i++)
+				res[i] = stack[i]->x;
+			result->push_back(res);
+		}
+		else if (top->grid[y] & ((1 << n) - 1))
+		{
+			nxt = new point(top, y);
+			int64_t firstPosition = top->grid[y] & (-top->grid[y]);
 			const int x = pow2[firstPosition];
-			pt->grid[y] &= ~firstPosition;
-			int64_t* grid = new int64_t[n];
-			memcpy(grid + y, pt->grid + y, sizeof(int64_t)*(n - y));
-			int j = 1;
+			nxt->x = x;
+			nxt->y = y;
+			nxt->grid[y] &= ~firstPosition;
+			j = 1;
 			while (y + j < n)
 			{
 				if (x + j < n)
-					grid[y + j] &= ~(1 << (x + j));
+					nxt->grid[y + j] &= ~(1 << (x + j));
 				if (x - j > -1)
-					grid[y + j] &= ~(1 << (x - j));
-				grid[y + j] &= ~(1 << x);
+					nxt->grid[y + j] &= ~(1 << (x - j));
+				nxt->grid[y + j] &= ~(1 << x);
 				j++;
 			}
-			point *nxtPt = new point(x, y);
-			nxtPt->grid = grid;
-			nxtPt->last = pt;
-			newLevel->push_back(nxtPt);
-			allPoints.push_back(nxtPt);
+			stack.push_back(nxt);
+		}
+		if (!nxt)
+		{
+			stack.pop_back();
+			if (stack.size())
+				stack[stack.size() - 1]->grid[top->y] &= ~(1 << top->x);
+			delete top;
 		}
 	}
-	delete level;
-	return newLevel;
 }
 
 const char* int2char(const int64_t& in)
@@ -107,43 +149,22 @@ vector<int*>* queens()
 	unordered_map<int64_t, int> pow2;
 	for (int i = 0; i < 63; i++)
 		pow2[power(2, i)] = i;
-	vector<point*> allPoints;
+	vector<int*>** searchResult = new vector<int*>*[n]();
 	vector<int*>* result = new vector<int*>();
-	vector<point*>* level = new  vector<point*>();
+	vector<thread> th;
 	for (int x = 0; x < n; x++)
 	{
-		int64_t* grid = new int64_t[n];
-		memset(grid, -1, n * sizeof(int64_t));
-		int j = 1;
-		while (j < n)
-		{
-			if (x + j < n)
-				grid[j] &= ~(1 << (x + j));
-			if (x - j > -1)
-				grid[j] &= ~(1 << (x - j));
-			grid[j] &= ~(1 << x);
-			j++;
-		}
-		point *nxtPt = new point(x, 0);
-		nxtPt->grid = grid;
-		level->push_back(nxtPt);
-		allPoints.push_back(nxtPt);
+		searchResult[x] = new vector<int*>();
+		th.push_back(thread(dfs, searchResult[x], x, 0, pow2));
 	}
-	for (int y = 1; y < n; y++)
-		level = bfs(level, y, allPoints, pow2);
-	for (point* pt : *level)
+	for (int x = 0; x < n; x++)
 	{
-		int* res = new int[n];
-		while (pt)
-		{
-			res[pt->y] = pt->x;
-			pt = pt->last;
-		}
-		result->push_back(res);
+		th[x].join();
+		for (int* comb : *searchResult[x])
+			result->push_back(comb);
+		delete searchResult[x];
 	}
-	for (point* pt : allPoints)
-		delete pt;
-	allPoints.clear();
+	delete searchResult;
 	return result;
 }
 
@@ -165,6 +186,9 @@ int main()
 		auto duration = chrono::duration_cast<std::chrono::milliseconds>(chrono::steady_clock::now() - start);
 		cout << "Time elapsed: " << duration.count() << "ms" << endl;
 		cout << "Number of solutions: " << result->size() << "\n" << endl;
+		for (int* comb : *result)
+			delete comb;
+		delete result;
 		/*cout << "Print number of solution:" << endl;
 		int nSolution;
 		cin >> nSolution;

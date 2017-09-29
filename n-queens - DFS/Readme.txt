@@ -1,1 +1,1 @@
-A BFS solution to the n-queens puzzle
+A multithread DFS solution to the n-queens puzzle
