@@ -14,17 +14,22 @@ using namespace std;
 int n;
 
 
-struct point
+class point
 {
+public:
 	int y;
 	int x;
+	int64_t* grid = new int64_t[n];
 	point(int x0, int y0)
 	{
 		x = x0;
 		y = y0;
+		memset(grid, -1, n * sizeof(int64_t));
 	}
-	point()
-	{	}
+	point(point* pt, int y)
+	{
+		memcpy(grid + y, pt->grid + y, sizeof(int64_t)*(n - y));
+	}
 	bool operator==(point& other)
 	{
 		return x == other.x && y == other.y;
@@ -33,70 +38,78 @@ struct point
 	{
 		return !(*this == other);
 	}
+	~point()
+	{
+		delete grid;
+	}
+};
+
+template<>
+struct hash<point*>
+{
+	size_t operator()(const point* pt) const
+	{
+		return (pt->x) << 16 + pt->y;
+	}
 };
 
 
 void dfs(vector<int*>* result, int x0, int y0, unordered_map<int64_t, int>& pow2)
 {
-	vector<point> stack;
-	int64_t ** grid = new int64_t*[n];
-	for (int i = 0; i < n; i++)
-		grid[i] = new int64_t[n];
-	point root = point(x0, y0);
+	vector<point*> stack;
+	point* root = new point(x0, y0);
 	int j = 1;
-	memset(grid[root.y], -1, n * sizeof(int64_t));
 	while (y0 + j < n)
 	{
 		if (x0 + j < n)
-			grid[root.y][y0 + j] &= ~(1 << (x0 + j));
+			root->grid[y0 + j] &= ~(1 << (x0 + j));
 		if (x0 - j > -1)
-			grid[root.y][y0 + j] &= ~(1 << (x0 - j));
-		grid[root.y][y0 + j] &= ~(1 << x0);
+			root->grid[y0 + j] &= ~(1 << (x0 - j));
+		root->grid[y0 + j] &= ~(1 << x0);
 		j++;
 	}
 	stack.push_back(root);
 	while (stack.size())
 	{
-		point* top = &stack[stack.size() - 1];
+
+		point* top = stack[stack.size() - 1];
+		point* nxt = NULL;
 		int y = top->y + 1;
-		if (grid[top->y][y] & ((1 << n) - 1) && stack.size() != n)
+		if (stack.size() == n)
 		{
-			point nxt = point();
-			int64_t firstPosition = grid[top->y][y] & (-grid[top->y][y]);
+			int* res = new int[n];
+			for (int i = 0; i < n; i++)
+				res[i] = stack[i]->x;
+			result->push_back(res);
+		}
+		else if (top->grid[y] & ((1 << n) - 1))
+		{
+			nxt = new point(top, y);
+			int64_t firstPosition = top->grid[y] & (-top->grid[y]);
 			const int x = pow2[firstPosition];
-			nxt.x = x;
-			nxt.y = y;
-			memcpy(grid[nxt.y] + y, grid[top->y] + y, (n - y) * sizeof(int64_t));
-			grid[nxt.y][y] &= ~firstPosition;
+			nxt->x = x;
+			nxt->y = y;
+			nxt->grid[y] &= ~firstPosition;
 			j = 1;
 			while (y + j < n)
 			{
 				if (x + j < n)
-					grid[nxt.y][y + j] &= ~(1 << (x + j));
+					nxt->grid[y + j] &= ~(1 << (x + j));
 				if (x - j > -1)
-					grid[nxt.y][y + j] &= ~(1 << (x - j));
-				grid[nxt.y][y + j] &= ~(1 << x);
+					nxt->grid[y + j] &= ~(1 << (x - j));
+				nxt->grid[y + j] &= ~(1 << x);
 				j++;
 			}
 			stack.push_back(nxt);
 		}
-		else {
-			if (stack.size() == n)
-			{
-				int* res = new int[n];
-				for (int i = 0; i < n; i++)
-					res[i] = stack[i].x;
-				result->push_back(res);
-			}
-			memset(grid[top->y] + top->y, -1, (n - top->y) * sizeof(int64_t));
-			if (stack.size() > 1)
-				grid[stack[stack.size() - 2].y][top->y] &= ~(1 << top->x);
+		if (!nxt)
+		{
 			stack.pop_back();
+			if (stack.size())
+				stack[stack.size() - 1]->grid[top->y] &= ~(1 << top->x);
+			delete top;
 		}
 	}
-	for (int i = 0; i < n; i++)
-		delete[] grid[i];
-	delete[] grid;
 }
 
 const char* int2char(const int64_t& in)
