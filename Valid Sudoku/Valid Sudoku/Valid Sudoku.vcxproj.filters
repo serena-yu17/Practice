@@ -26,10 +26,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="stdafx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ValidSudoku.cpp">
+    <ClCompile Include="ValidSudoku.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

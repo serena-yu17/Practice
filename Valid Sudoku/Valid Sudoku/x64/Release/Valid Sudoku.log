@@ -1,0 +1,8 @@
+﻿  stdafx.c
+  ValidSudoku.c
+ValidSudoku.c(18): warning C4013: 'isdigit' undefined; assuming extern returning int
+  Generating code
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Valid Sudoku.vcxproj -> C:\OneDrive\projects\Console\Practice\Valid Sudoku\x64\Release\Valid Sudoku.exe
+  Valid Sudoku.vcxproj -> C:\OneDrive\projects\Console\Practice\Valid Sudoku\x64\Release\Valid Sudoku.pdb (Full PDB)

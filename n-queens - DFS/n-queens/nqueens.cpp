@@ -13,38 +13,31 @@ using namespace std;
 
 int n;
 
+typedef unsigned char byte;
 
 struct point
 {
-	int y;
-	int x;
-	point(int x0, int y0)
+	byte y;
+	byte x;
+	point(byte x0, byte y0)
 	{
 		x = x0;
 		y = y0;
 	}
 	point()
 	{	}
-	bool operator==(point& other)
-	{
-		return x == other.x && y == other.y;
-	}
-	bool operator!=(point& other)
-	{
-		return !(*this == other);
-	}
 };
 
 
-void dfs(vector<int*>* result, int x0, int y0, unordered_map<int64_t, int>& pow2)
+void dfs(size_t* count, byte x0, byte y0, unordered_map<int32_t, byte>& pow2)
 {
 	vector<point> stack;
-	int64_t ** grid = new int64_t*[n];
+	int32_t ** grid = new int32_t*[n];
 	for (int i = 0; i < n; i++)
-		grid[i] = new int64_t[n];
+		grid[i] = new int32_t[n];
 	point root = point(x0, y0);
-	int j = 1;
-	memset(grid[root.y], -1, n * sizeof(int64_t));
+	byte j = 1;
+	memset(grid[root.y], -1, n * sizeof(int32_t));
 	while (y0 + j < n)
 	{
 		if (x0 + j < n)
@@ -58,15 +51,15 @@ void dfs(vector<int*>* result, int x0, int y0, unordered_map<int64_t, int>& pow2
 	while (stack.size())
 	{
 		point* top = &stack[stack.size() - 1];
-		int y = top->y + 1;
+		byte y = top->y + 1;
 		if (grid[top->y][y] & ((1 << n) - 1) && stack.size() != n)
 		{
 			point nxt = point();
-			int64_t firstPosition = grid[top->y][y] & (-grid[top->y][y]);
-			const int x = pow2[firstPosition];
+			int32_t firstPosition = grid[top->y][y] & (-grid[top->y][y]);
+			const byte x = pow2[firstPosition];
 			nxt.x = x;
 			nxt.y = y;
-			memcpy(grid[nxt.y] + y, grid[top->y] + y, (n - y) * sizeof(int64_t));
+			memcpy(grid[nxt.y] + y, grid[top->y] + y, (n - y) * sizeof(int32_t));
 			grid[nxt.y][y] &= ~firstPosition;
 			j = 1;
 			while (y + j < n)
@@ -82,30 +75,25 @@ void dfs(vector<int*>* result, int x0, int y0, unordered_map<int64_t, int>& pow2
 		}
 		else {
 			if (stack.size() == n)
-			{
-				int* res = new int[n];
-				for (int i = 0; i < n; i++)
-					res[i] = stack[i].x;
-				result->push_back(res);
-			}
-			memset(grid[top->y] + top->y, -1, (n - top->y) * sizeof(int64_t));
+				(*count)++;
+			memset(grid[top->y] + top->y, -1, (n - top->y) * sizeof(int32_t));
 			if (stack.size() > 1)
 				grid[stack[stack.size() - 2].y][top->y] &= ~(1 << top->x);
 			stack.pop_back();
 		}
 	}
-	for (int i = 0; i < n; i++)
+	for (byte i = 0; i < n; i++)
 		delete[] grid[i];
 	delete[] grid;
 }
 
-const char* int2char(const int64_t& in)
+const char* int2char(const int32_t& in)
 {
-	int size = CHAR_BIT * sizeof(int64_t);
+	byte size = CHAR_BIT * sizeof(int32_t);
 	char* result = new char[size + 1];
 	result[size] = 0;
-	int i = size - 1;
-	int64_t n = in;
+	byte i = size - 1;
+	int32_t n = in;
 	while (i > -1)
 	{
 		result[i--] = (n & 1) + '0';
@@ -114,11 +102,12 @@ const char* int2char(const int64_t& in)
 	return result;
 }
 
-int64_t power(int base, int n)
+int32_t power(byte b, byte n)
 {
+	int32_t base = b;
 	if (!base && n)
 		return 0;
-	int64_t pow = 1;
+	int32_t pow = 1;
 	while (n) {
 		if (n & 1)
 			pow *= base;
@@ -129,28 +118,23 @@ int64_t power(int base, int n)
 }
 
 
-vector<int*>* queens()
+size_t queens()
 {
-	unordered_map<int64_t, int> pow2;
-	for (int i = 0; i < 63; i++)
+	unordered_map<int32_t, byte> pow2;
+	for (byte i = 0; i < n; i++)
 		pow2[power(2, i)] = i;
-	vector<int*>** searchResult = new vector<int*>*[n]();
-	vector<int*>* result = new vector<int*>();
+	size_t* countThread = new size_t[n]();
+	size_t count = 0;
 	vector<thread> th;
-	for (int x = 0; x < n; x++)
-	{
-		searchResult[x] = new vector<int*>();
-		th.push_back(thread(dfs, searchResult[x], x, 0, pow2));
-	}
-	for (int x = 0; x < n; x++)
+	for (byte x = 0; x < n; x++)
+		th.push_back(thread(dfs, countThread+x, x, 0, pow2));
+	for (byte x = 0; x < n; x++)
 	{
 		th[x].join();
-		for (int* comb : *searchResult[x])
-			result->push_back(comb);
-		delete searchResult[x];
+		count += countThread[x];
 	}
-	delete searchResult;
-	return result;
+	delete countThread;
+	return count;
 }
 
 
@@ -161,19 +145,16 @@ int main()
 	{
 		cout << "Enter number of queens:" << endl;
 		cin >> n;
-		if (n > 62)
+		if (n > 30)
 		{
-			cout << "Input too large too handle.\n" << endl;
+			cout << "Input is too large too handle.\n" << endl;
 			continue;
 		}
 		auto start = chrono::steady_clock::now();
-		vector<int*>* result = queens();
+		size_t result = queens();
 		auto duration = chrono::duration_cast<std::chrono::milliseconds>(chrono::steady_clock::now() - start);
 		cout << "Time elapsed: " << duration.count() << "ms" << endl;
-		cout << "Number of solutions: " << result->size() << "\n" << endl;
-		for (int* comb : *result)
-			delete comb;
-		delete result;
+		cout << "Number of solutions: " << result << "\n" << endl;
 		/*cout << "Print number of solution:" << endl;
 		int nSolution;
 		cin >> nSolution;

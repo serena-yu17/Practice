@@ -1,0 +1,4 @@
+﻿  ValidSudoku.c
+c:\onedrive\projects\console\practice\valid sudoku\valid sudoku\validsudoku.c(18): warning C4013: 'isdigit' undefined; assuming extern returning int
+  Valid Sudoku.vcxproj -> C:\OneDrive\projects\Console\Practice\Valid Sudoku\x64\Debug\Valid Sudoku.exe
+  Valid Sudoku.vcxproj -> C:\OneDrive\projects\Console\Practice\Valid Sudoku\x64\Debug\Valid Sudoku.pdb (Partial PDB)

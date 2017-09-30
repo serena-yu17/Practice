@@ -1,7 +1,8 @@
-﻿  stdafx.c
-  ConsoleApplication1.c
+﻿  ConsoleApplication1.c
   Generating code
-  All 8 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 8 functions (12.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ConsoleApplication1.vcxproj -> C:\OneDrive\projects\Console\Practice\Power\x64\Release\ConsoleApplication1.exe
   ConsoleApplication1.vcxproj -> C:\OneDrive\projects\Console\Practice\Power\x64\Release\ConsoleApplication1.pdb (Full PDB)
