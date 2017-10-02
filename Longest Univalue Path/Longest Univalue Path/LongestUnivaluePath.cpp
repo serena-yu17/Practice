@@ -22,7 +22,7 @@ int longestUnivaluePath(TreeNode* root)
 		return 0;
 	vector<TreeNode*> stack;
 	unordered_set<TreeNode*> usedPath;
-	unordered_map<TreeNode*, unsigned int> count;
+	unordered_map<TreeNode*, unsigned> count;
 	unordered_map<TreeNode*, TreeNode*> branch;
 	unordered_map<TreeNode*, unsigned> maxBranchCount;
 	stack.push_back(root);
@@ -31,7 +31,7 @@ int longestUnivaluePath(TreeNode* root)
 	branch[root] = root;
 	while (stack.size())
 	{
-		TreeNode* pt = stack[stack.size() - 1];
+		TreeNode* pt = stack[stack.size() - 1];				   // pointer to top of stack
 		TreeNode* nxt = NULL;
 		if (pt->left && usedPath.find(pt->left) == usedPath.end())
 			nxt = pt->left;
@@ -77,6 +77,8 @@ int longestUnivaluePath(TreeNode* root)
 	}
 	return longestLength;
 }
+
+//The functions below are used to build the test cases
 
 std::vector<int> getint(std::string s) {
 	if (s.size() == 0)

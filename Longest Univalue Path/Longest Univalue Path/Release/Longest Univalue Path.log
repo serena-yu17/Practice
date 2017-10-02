@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  LongestUnivaluePath.cpp
+LongestUnivaluePath.cpp(86): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(90): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(99): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(112): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(122): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(135): warning C4018: '<': signed/unsigned mismatch
+LongestUnivaluePath.cpp(153): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 797 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\Release\Longest Univalue Path.exe
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\Release\Longest Univalue Path.pdb (Full PDB)
