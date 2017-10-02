@@ -1,0 +1,10 @@
+﻿  LongestUnivaluePath.cpp
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(86): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(99): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(112): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(135): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(153): warning C4018: '<': signed/unsigned mismatch
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\Debug\Longest Univalue Path.exe
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\Debug\Longest Univalue Path.pdb (Partial PDB)
