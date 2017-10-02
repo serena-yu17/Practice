@@ -1,4 +1,12 @@
-Longest Univalue Path
+This program used an iterative O(n) approach to solve the longest univalue path problem.
+
+
+
+
+
+
+/////////
+Longest univalue path
 
 Given a binary tree, find the length of the longest path where each node in the path has the same value. This path may or may not pass through the root.
 
