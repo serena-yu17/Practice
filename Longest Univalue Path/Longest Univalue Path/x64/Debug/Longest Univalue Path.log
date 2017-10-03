@@ -1,0 +1,11 @@
+﻿  LongestUnivaluePath.cpp
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(168): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(168): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(169): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(169): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(179): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(179): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(180): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
+c:\onedrive\projects\console\practice\longest univalue path\longest univalue path\longestunivaluepath.cpp(180): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'int *'
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\x64\Debug\Longest Univalue Path.exe
+  Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\x64\Debug\Longest Univalue Path.pdb (Partial PDB)

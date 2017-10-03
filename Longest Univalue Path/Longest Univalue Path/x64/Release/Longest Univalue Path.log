@@ -1,7 +1,16 @@
-﻿  stdafx.cpp
-  LongestUnivaluePath.cpp
+﻿  LongestUnivaluePath.cpp
+LongestUnivaluePath.cpp(168): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+LongestUnivaluePath.cpp(168): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'int *'
+LongestUnivaluePath.cpp(169): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
+LongestUnivaluePath.cpp(169): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'int *'
+LongestUnivaluePath.cpp(179): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+LongestUnivaluePath.cpp(179): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'int *'
+LongestUnivaluePath.cpp(180): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
+LongestUnivaluePath.cpp(180): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'int *'
   Generating code
-  All 797 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  6 of 803 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\x64\Release\Longest Univalue Path.exe
   Longest Univalue Path.vcxproj -> C:\OneDrive\projects\Console\Practice\Longest Univalue Path\x64\Release\Longest Univalue Path.pdb (Full PDB)

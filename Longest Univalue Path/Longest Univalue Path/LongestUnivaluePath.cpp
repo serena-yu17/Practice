@@ -158,6 +158,51 @@ TreeNode* buildTree(const vector<int>& num)
 	return root;
 }
 
+void recPrintNode(FILE* fs, TreeNode* node, int* nullCount)
+{
+	if (node->left)
+	{
+		fprintf(fs, "    %d -> %d;\n", node->val, node->left->val);
+		if (!node->right)
+		{
+			fprintf(fs, "    null%d [shape=point, ];\n", nullCount);
+			fprintf(fs, "    %d -> null%d;\n", node->val, nullCount);
+			*nullCount++;
+		}
+		recPrintNode(fs, node->left, nullCount);
+	}
+	if (node->right)
+	{
+		fprintf(fs, "    %d -> %d;\n", node->val, node->right->val);
+		if (!node->left)
+		{
+			fprintf(fs, "    null%d [shape=point, ];\n", nullCount);
+			fprintf(fs, "    %d -> null%d;\n", node->val, nullCount);
+			*nullCount++;
+		}
+		recPrintNode(fs, node->right, nullCount);
+	}
+}
+
+void print_dot(TreeNode* root)
+{
+	FILE* fs = fopen("./tree.gv", "w");
+	fprintf(fs, "digraph BST {\n");
+	fprintf(fs, "    node [fontname=\"Arial\"];\n");
+	if (!root)
+		fprintf(fs, "\n");
+	else if (!root->left && root->right)
+		fprintf(fs, "    %d;\n", root->val);
+	else
+	{
+		int* nullCount = new int();
+		recPrintNode(fs, root, nullCount);
+		delete nullCount;
+	}
+	fprintf(fs, "}\n");
+	fclose(fs);
+}
+
 int main()
 {
 	ios::sync_with_stdio(false);
@@ -170,6 +215,9 @@ int main()
 		TreeNode* root = NULL;
 		if (num.size())
 			root = buildTree(num);
+		print_dot(root);
+		system("dot -Tsvg ./tree.gv -o graph1.svg ");
+		system("graph1.svg");
 		cout << longestUnivaluePath(root) << endl;
 	}
 	return 0;
