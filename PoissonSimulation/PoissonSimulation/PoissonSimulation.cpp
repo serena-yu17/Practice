@@ -4,11 +4,8 @@
 #include "stdafx.h"
 #include <random>
 #include <iostream>
-#include <cmath>
 #include <Queue>
 #include <iomanip>
-#include <thread>
-#include <atomic>
 using namespace std;
 
 void printTime(unsigned long time)

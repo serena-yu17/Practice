@@ -1,7 +1,10 @@
-﻿  Generating code
-  8 of 189 functions ( 4.2%) were compiled, the rest were copied from previous compilation.
-    6 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+﻿  PoissonSimulation.cpp
+PoissonSimulation.cpp(123): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
+PoissonSimulation.cpp(125): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
+  Generating code
+  0 of 189 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\Release\PoissonSimulation.exe
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\Release\PoissonSimulation.pdb (Full PDB)
