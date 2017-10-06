@@ -73,7 +73,7 @@ void runTests(const double& arrive_interval, const double& service_interval)
 	cout << "\nFor how long, in hours, should the simulation be run? ";
 	size_t  simulation_limit;
 	cin >> simulation_limit;
-	simulation_limit *= 360 / nthreads;
+	simulation_limit *= 3600 / nthreads;
 	thread th[nthreads];
 	Statistics stats[nthreads];
 	for (int i = 0; i < nthreads; i++)

@@ -1,7 +1,10 @@
-﻿  Generating code
+﻿  PoissonSimulation.cpp
+PoissonSimulation.cpp(188): warning C4244: 'argument': conversion from 'double' to '::size_t', possible loss of data
+PoissonSimulation.cpp(190): warning C4244: 'argument': conversion from 'double' to '::size_t', possible loss of data
+  Generating code
   14 of 282 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\x64\Release\PoissonSimulation.exe
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\x64\Release\PoissonSimulation.pdb (Full PDB)
