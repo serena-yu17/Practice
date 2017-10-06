@@ -6,7 +6,6 @@
 #include <iostream>
 #include <Queue>
 #include <iomanip>
-#include <atomic>
 #include <thread>
 using namespace std;
 
@@ -24,7 +23,7 @@ struct Customer
 };
 
 struct Statistics {
-	size_t ncustomers;
+	size_t ncustomers = 0;
 	size_t cum_queue_length;
 	size_t cum_waiting_length;
 	size_t cum_waiting_time;
@@ -43,7 +42,7 @@ void printTime(size_t time)
 	time /= 60;
 	size_t day = time;
 	if (day)
-		cout << day << " days ";
+		cout << day << " d ";
 	if (min)
 		cout << min << " min ";
 	if ((!min && !day) || sec)
