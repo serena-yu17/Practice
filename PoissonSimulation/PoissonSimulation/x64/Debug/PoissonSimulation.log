@@ -1,0 +1,5 @@
+﻿  PoissonSimulation.cpp
+c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(188): warning C4244: 'argument': conversion from 'double' to '::size_t', possible loss of data
+c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(190): warning C4244: 'argument': conversion from 'double' to '::size_t', possible loss of data
+  PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\x64\Debug\PoissonSimulation.exe
+  PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\x64\Debug\PoissonSimulation.pdb (Partial PDB)

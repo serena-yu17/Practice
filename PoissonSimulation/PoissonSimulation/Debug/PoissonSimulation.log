@@ -1,5 +1,5 @@
 ﻿  PoissonSimulation.cpp
-c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(118): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
-c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(120): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
+c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(148): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
+c:\onedrive\projects\console\practice\poissonsimulation\poissonsimulation\poissonsimulation.cpp(150): warning C4244: 'argument': conversion from 'double' to 'unsigned long', possible loss of data
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\Debug\PoissonSimulation.exe
   PoissonSimulation.vcxproj -> C:\OneDrive\projects\Console\Practice\PoissonSimulation\Debug\PoissonSimulation.pdb (Partial PDB)

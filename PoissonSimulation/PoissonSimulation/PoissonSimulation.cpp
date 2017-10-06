@@ -6,23 +6,11 @@
 #include <iostream>
 #include <Queue>
 #include <iomanip>
+#include <atomic>
+#include <thread>
 using namespace std;
 
-void printTime(unsigned long time)
-{
-	int sec = time % 60;
-	time /= 60;
-	int min = time % 60;
-	time /= 60;
-	int day = time;
-	if (day)
-		cout << day << " days ";
-	if (min)
-		cout << min << " min ";
-	if ((!min && !day) || sec)
-		cout << sec << " s";
-	cout << endl;
-}
+const int nthreads = 10;
 
 struct Customer
 {
@@ -35,13 +23,99 @@ struct Customer
 	}
 };
 
+struct Statistics {
+	size_t ncustomers;
+	size_t cum_queue_length;
+	size_t cum_waiting_length;
+	size_t cum_waiting_time;
+	size_t cum_waiting_and_serving_time;
+	size_t total_simulation;
+};
 
-void simulate(double arrive_interval, double service_interval)
+void simulate(const double&, const double&, const size_t&, Statistics*);
+void printTime(size_t);
+
+void printTime(size_t time)
+{
+	size_t sec = time % 60;
+	time /= 60;
+	size_t min = time % 60;
+	time /= 60;
+	size_t day = time;
+	if (day)
+		cout << day << " days ";
+	if (min)
+		cout << min << " min ";
+	if ((!min && !day) || sec)
+		cout << sec << " s";
+	cout << endl;
+}
+
+double avg(double* array)
+{
+	double sum = 0;
+	for (int i = 0; i < nthreads; i++)
+		sum += array[i];
+	return sum / nthreads;
+}
+
+size_t avg(size_t* array)
+{
+	size_t sum = 0;
+	for (int i = 0; i < nthreads; i++)
+		sum += array[i];
+	return sum / nthreads;
+}
+
+
+void runTests(const double& arrive_interval, const double& service_interval)
 {
 	cout << "\nFor how long, in hours, should the simulation be run? ";
 	size_t  simulation_limit;
 	cin >> simulation_limit;
-	simulation_limit *= 3600;
+	simulation_limit *= 360;
+	thread th[nthreads];
+	Statistics stats[nthreads];
+	for (int i = 0; i < nthreads; i++)
+		th[i] = thread(simulate, arrive_interval, service_interval, simulation_limit, &stats[i]);
+	for (int i = 0; i < nthreads; i++)
+		th[i].join();
+
+	size_t ncustomers = 0;
+	size_t simulation_runs = 0;
+	double avg_customers_queue[nthreads];
+	double avg_customers_queue_waiting[nthreads];
+	size_t avg_waiting_time[nthreads];
+	size_t avg_waiting_time_service[nthreads];
+
+	for (int i = 0; i < nthreads; i++)
+	{
+		if (stats[i].ncustomers)
+		{
+			ncustomers += stats[i].ncustomers;
+			simulation_runs += stats[i].total_simulation;
+			avg_customers_queue[i] = (double)stats[i].cum_queue_length / stats[i].total_simulation;
+			avg_customers_queue_waiting[i] = (double)stats[i].cum_waiting_length / (double)stats[i].total_simulation;
+			avg_waiting_time[i] = stats[i].cum_waiting_time / stats[i].ncustomers;
+			avg_waiting_time_service[i] = stats[i].cum_waiting_and_serving_time / stats[i].ncustomers;
+		}
+	}
+
+	cout << setprecision(3);
+	cout << "Number of customers who have joinded the queue: " << ncustomers << "\n";
+	cout << "Average number of customers in queue including those being served: "
+		<< avg(avg_customers_queue) << "\n";
+	cout << "Average number of customers in queue waiting to be served: "
+		<< avg(avg_customers_queue_waiting) << "\n";
+	cout << "Average waiting time, excluding serving time: ";
+	printTime(avg(avg_waiting_time));
+	cout << "Average waiting time, including serving time: ";
+	printTime(avg(avg_waiting_time_service));
+}
+
+
+void simulate(const double& arrive_interval, const double& service_interval, const size_t& simulation_limit, Statistics* stats)
+{
 	size_t nb_of_customers = 0;
 	size_t cumulative_queue_length = 0;
 	size_t cumulative_waiting_length = 0;
@@ -54,7 +128,7 @@ void simulate(double arrive_interval, double service_interval)
 	queue<Customer> q;
 
 	poisson_distribution<size_t> customer(1 / arrive_interval);
-	exponential_distribution<double> service(1/service_interval);
+	exponential_distribution<double> service(1 / service_interval);
 
 	for (size_t simulation_tick = 0; simulation_tick < simulation_limit; simulation_tick++)
 	{
@@ -90,25 +164,16 @@ void simulate(double arrive_interval, double service_interval)
 		}
 	}
 
-	if (nb_of_customers)
-	{
-		cout << setprecision(3);
-		cout << "Number of customers who have joinded the queue: " << nb_of_customers << "\n";
-		cout << "Average number of customers in queue including those being served: " << (double)cumulative_queue_length / simulation_limit << "\n";
-		cout << "Average number of customers in queue waiting to be served: " << (double)cumulative_waiting_length / simulation_limit << "\n";
-		cout << "Average waiting time, excluding serving time: ";
-		printTime(cumulative_waiting_time / nb_of_customers);
-		cout << "Average waiting time, including serving time: ";
-		printTime(cumulative_waiting_and_serving_time / nb_of_customers);
-	}
-	else
-		cout << "No one has joined the queue; a very quiet day..." << endl;
-}
-
-void runTests(double arrive_interval, double service_interval)
-{
+	stats->ncustomers = nb_of_customers;
+	stats->cum_queue_length = cumulative_queue_length;
+	stats->cum_waiting_length = cumulative_waiting_length;
+	stats->cum_waiting_time = cumulative_waiting_time;
+	stats->cum_waiting_and_serving_time = cumulative_waiting_and_serving_time;
+	stats->total_simulation = simulation_limit;
 
 }
+
+
 
 void calculate(double arrive_interval, double service_interval)
 {
@@ -137,7 +202,7 @@ int main()
 	cin >> service_interval;
 	service_interval *= 60;
 	calculate(arrive_interval, service_interval);
-	simulate(arrive_interval, service_interval);
+	runTests(arrive_interval, service_interval);
 	cin.ignore(1000, '\n');
 	cin.clear();
 	getchar();
