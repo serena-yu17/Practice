@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <cmath>
+#include <string.h>
 using namespace std;
 
 double heron(int*);
@@ -15,24 +16,21 @@ int main()
 	{
 		cout << "Input the lengths of 3 sides:" << endl;
 		int length[3];
-		char temp_str[256], segment[256];
-		cin.getline(temp_str, 256);
-		int i = 0, j = 0, count = 0;
+		char temp_str[1024];
+		cin.getline(temp_str, 1024);
+		int i = 0, count = 0;
 		while (i < strlen(temp_str) && count < 3)
 		{
+			int buffer = 0;
 			while (isdigit(temp_str[i]))
 			{
-				segment[j] = temp_str[i];
-				i++; 
-				j++;
-			}
-			segment[j + 1] = '\0';
-			length[count] = stoi(segment);
-			count++;
-			j = 0;
-			memset(segment, 0, 256);
-			while (i < strlen(temp_str) && !isdigit(temp_str[i]))
+				buffer *= 10;
+				buffer += temp_str[i];
 				i++;
+			}
+			if (buffer)
+				length[count++] = buffer;
+			i++;
 		}
 		if (!checkTriangle(length[0], length[1], length[2]))
 		{
@@ -55,12 +53,11 @@ double heron(int* length)
 
 int checkTriangle(int a, int b, int c)
 {
-	int flag = 1;
 	if (a + b < c)
-		flag = 0;
+		return 0;
 	if (a + c < b)
-		flag = 0;
+		return 0;
 	if (b + c < a)
-		flag = 0;
-	return flag;
+		return 0;
+	return 1;
 }

@@ -1,0 +1,4 @@
+﻿  Combinationsum.c
+c:\onedrive\projects\console\practice\combination sum\combination sum\combinationsum.c(141): warning C4013: 'getch' undefined; assuming extern returning int
+  Combination sum.vcxproj -> C:\OneDrive\projects\Console\Practice\Combination sum\x64\Debug\Combination sum.exe
+  Combination sum.vcxproj -> C:\OneDrive\projects\Console\Practice\Combination sum\x64\Debug\Combination sum.pdb (Partial PDB)
