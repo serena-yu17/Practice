@@ -1,11 +1,9 @@
-﻿  DistinctStrings.cpp
-DistinctStrings.cpp(110): warning C4018: '<': signed/unsigned mismatch
-DistinctStrings.cpp(114): warning C4018: '<': signed/unsigned mismatch
-DistinctStrings.cpp(126): warning C4018: '<': signed/unsigned mismatch
+﻿  DistinctStrings.c
+DistinctStrings.c(126): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  1 of 8 functions (12.5%) were compiled, the rest were copied from previous compilation.
+  1 of 7 functions (14.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Distinct_Strings.vcxproj -> C:\OneDrive\projects\Console\Practice\Distinct_Strings\Release\Distinct_Strings.exe
   Distinct_Strings.vcxproj -> C:\OneDrive\projects\Console\Practice\Distinct_Strings\Release\Distinct_Strings.pdb (Full PDB)

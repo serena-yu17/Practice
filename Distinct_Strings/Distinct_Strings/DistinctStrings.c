@@ -107,11 +107,11 @@ void printWords(char* strArray, int targetLength)
 	}
 	//print
 	printf("{");
-	for (int i = 0; i < count; i++)
+	for (unsigned i = 0; i < count; i++)
 	{
 		if (i)
 			printf(" ");
-		for (int j = words[i]; j < words[i] + wordLength[i]; j++)
+		for (unsigned j = words[i]; j < words[i] + wordLength[i]; j++)
 		{
 			char c = strArray[j];
 			if (strArray[j] >= 'A' && strArray[j] <= 'Z')
