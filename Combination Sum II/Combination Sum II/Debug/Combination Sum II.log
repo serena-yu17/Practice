@@ -1,0 +1,6 @@
+﻿  CombinationSumII.c
+c:\onedrive\projects\console\practice\combination sum ii\combination sum ii\combinationsumii.c(83): warning C4090: 'function': different 'const' qualifiers
+c:\onedrive\projects\console\practice\combination sum ii\combination sum ii\combinationsumii.c(83): warning C4028: formal parameter 1 different from declaration
+c:\onedrive\projects\console\practice\combination sum ii\combination sum ii\combinationsumii.c(83): warning C4028: formal parameter 2 different from declaration
+  Combination Sum II.vcxproj -> C:\OneDrive\projects\Console\Practice\Combination Sum II\Debug\Combination Sum II.exe
+  Combination Sum II.vcxproj -> C:\OneDrive\projects\Console\Practice\Combination Sum II\Debug\Combination Sum II.pdb (Partial PDB)

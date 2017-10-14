@@ -101,10 +101,10 @@ void search(int* candidates, int candidatesSize, int target, int** columnSizes, 
 
 int** combinationSum(int* candidates, int candidatesSize, int target, int** columnSizes, int* returnSize)
 {
-	*returnSize = 0;		
+	*returnSize = 0;
 	int capacity = candidatesSize;
 	int*** returnArray = (int***)malloc(sizeof(*returnArray));
-	*returnArray = (int**)malloc(sizeof(*returnArray) * capacity);
+	*returnArray = (int**)malloc(sizeof(**returnArray) * capacity);
 	(*columnSizes) = (int*)malloc(sizeof(**columnSizes) * capacity);
 	if (candidatesSize < 1 && (candidatesSize == 1 && candidates[0] != target))
 		return	*returnArray;
@@ -114,7 +114,9 @@ int** combinationSum(int* candidates, int candidatesSize, int target, int** colu
 		addition[0] = i;
 		search(candidates, candidatesSize, target, columnSizes, returnSize, returnArray, addition, 1, 0, &capacity);
 	}
-	return *returnArray;
+	int** arr = *returnArray;
+	free(returnArray);
+	return arr;
 }
 
 int main()

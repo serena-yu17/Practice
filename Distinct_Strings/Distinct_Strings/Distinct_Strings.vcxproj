@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{E110BC4D-3B3F-436D-A60D-1455F575460A}</ProjectGuid>
+    <ProjectGuid>{53A1EC4D-F8F6-4D40-9EA1-A20F4AC4CCBE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>CombinationSumII</RootNamespace>
+    <RootNamespace>Distinct_Strings</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,8 +150,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CombinationSumII.c" />
-    <ClCompile Include="stdafx.c">
+    <ClCompile Include="DistinctStrings.cpp" />
+    <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

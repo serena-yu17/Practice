@@ -26,10 +26,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CombinationSumII.c">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.c">
+    <ClCompile Include="DistinctStrings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
