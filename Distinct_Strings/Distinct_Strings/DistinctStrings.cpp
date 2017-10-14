@@ -141,7 +141,7 @@ int main()
 	int capacity = 256;
 	char* strArray = (char*)malloc(capacity);
 	int p = 0;
-	puts("Input the words, separated by spaces:");
+	puts("Input words:");
 	char c;
 	while (EOF != (c = getchar()) && c != '\n' && c != '\r')
 	{
