@@ -1,0 +1,5 @@
+﻿  stdafx.c
+  DistinctStrings.c
+c:\onedrive\projects\console\practice\distinct_strings\distinct_strings\distinctstrings.c(126): warning C4018: '<': signed/unsigned mismatch
+  Distinct_Strings.vcxproj -> C:\OneDrive\projects\Console\Practice\Distinct_Strings\Debug\Distinct_Strings.exe
+  Distinct_Strings.vcxproj -> C:\OneDrive\projects\Console\Practice\Distinct_Strings\Debug\Distinct_Strings.pdb (Partial PDB)
