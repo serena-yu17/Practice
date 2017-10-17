@@ -1,0 +1,8 @@
+﻿  stdafx.c
+  Permutations.c
+Permutations.c(21): warning C4013: 'isdigit' undefined; assuming extern returning int
+  Generating code
+  All 9 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Permutations.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutations\Release\Permutations.exe
+  Permutations.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutations\Release\Permutations.pdb (Full PDB)

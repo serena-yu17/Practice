@@ -1,0 +1,4 @@
+﻿  Permutations.c
+c:\onedrive\projects\console\practice\permutations\permutations\permutations.c(21): warning C4013: 'isdigit' undefined; assuming extern returning int
+  Permutations.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutations\Debug\Permutations.exe
+  Permutations.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutations\Debug\Permutations.pdb (Partial PDB)
