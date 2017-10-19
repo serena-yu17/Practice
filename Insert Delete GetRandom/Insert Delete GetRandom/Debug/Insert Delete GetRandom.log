@@ -1,0 +1,4 @@
+﻿  InsertDeleteGetRandom.cpp
+c:\onedrive\projects\console\practice\insert delete getrandom\insert delete getrandom\insertdeletegetrandom.cpp(49): warning C4715: 'RandomizedSet::getRandom': not all control paths return a value
+  Insert Delete GetRandom.vcxproj -> C:\OneDrive\projects\Console\Practice\Insert Delete GetRandom\Debug\Insert Delete GetRandom.exe
+  Insert Delete GetRandom.vcxproj -> C:\OneDrive\projects\Console\Practice\Insert Delete GetRandom\Debug\Insert Delete GetRandom.pdb (Partial PDB)

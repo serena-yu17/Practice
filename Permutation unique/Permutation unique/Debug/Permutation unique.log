@@ -1,0 +1,7 @@
+﻿  Permutationunique.c
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(21): warning C4013: 'isdigit' undefined; assuming extern returning int
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4047: 'function': '::size_t' differs in levels of indirection from 'void *'
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4024: 'malloc': different types for formal and actual parameter 1
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4020: 'malloc': too many actual parameters
+  Permutation unique.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutation unique\Debug\Permutation unique.exe
+  Permutation unique.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutation unique\Debug\Permutation unique.pdb (Partial PDB)
