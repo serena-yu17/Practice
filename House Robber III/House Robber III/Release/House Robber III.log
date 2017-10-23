@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  House Robber III.cpp
+House Robber III.cpp(20): warning C4227: anachronism used: qualifiers on reference are ignored
+House Robber III.cpp(22): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(28): warning C4227: anachronism used: qualifiers on reference are ignored
+House Robber III.cpp(34): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(41): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(68): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(78): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(91): warning C4018: '<': signed/unsigned mismatch
+House Robber III.cpp(109): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 205 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  House Robber III.vcxproj -> C:\OneDrive\projects\Console\Practice\House Robber III\Release\House Robber III.exe

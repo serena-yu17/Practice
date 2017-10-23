@@ -1,7 +1,10 @@
 ﻿  Permutationunique.c
 c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(21): warning C4013: 'isdigit' undefined; assuming extern returning int
-c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4047: 'function': '::size_t' differs in levels of indirection from 'void *'
-c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4024: 'malloc': different types for formal and actual parameter 1
-c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4020: 'malloc': too many actual parameters
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4090: 'function': different 'const' qualifiers
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4028: formal parameter 1 different from declaration
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(119): warning C4028: formal parameter 2 different from declaration
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(132): warning C4476: 'printf' : unknown type field character '.' in format specifier
+c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(132): warning C4474: 'printf' : too many arguments passed for format string
+  c:\onedrive\projects\console\practice\permutation unique\permutation unique\permutationunique.c(132): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   Permutation unique.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutation unique\Debug\Permutation unique.exe
   Permutation unique.vcxproj -> C:\OneDrive\projects\Console\Practice\Permutation unique\Debug\Permutation unique.pdb (Partial PDB)

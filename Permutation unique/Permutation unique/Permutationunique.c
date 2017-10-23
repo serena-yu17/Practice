@@ -52,30 +52,22 @@ int* getint(int* size)
 	return nums;
 }
 
-size_t factorial(int n)
-{
-	if (n == 0)
-		return 1;
-	if (n < 0)
-	{
-		puts("Factorial does not exist for negative numbers.");
-		return 0;
-	}
-	size_t fac = 1;
-	int local_n = n;
-	while (local_n != 1)
-	{
-		fac *= local_n;
-		local_n--;
-	}
-	return fac;
-}
 
 void swap(int* a, int* b)
 {
 	int temp = *b;
 	*b = *a;
 	*a = temp;
+}
+
+void reverse(int* a, int* b)
+{
+	while (a < b)
+	{
+		swap(a, b);
+		a++;
+		b--;
+	}
 }
 
 int* deepcopy(int* arr, int size)
@@ -88,6 +80,27 @@ int* deepcopy(int* arr, int size)
 int compar(void* a, void* b)
 {
 	return	*(int*)a >= *(int*)b;
+}
+
+int permutate(int* nums, int numsSize)
+{
+	int i = numsSize - 1;
+	while (1)
+	{
+		int j = i;
+		i--;
+		if (nums[i] < nums[j])
+		{
+			int k = numsSize;
+			while (nums[i] >= nums[--k])
+				;
+			swap(&nums[i], &nums[k]);
+			reverse(&nums[j], &nums[numsSize - 1]);
+			return 1;
+		}
+		if (i == 0)
+			return 0;
+	}
 }
 
 int** permuteUnique(int* nums, int numsSize, int* returnSize)
@@ -108,9 +121,20 @@ int** permuteUnique(int* nums, int numsSize, int* returnSize)
 	int** returnArr = (int**)malloc(sizeof(*returnArr) * capacity);
 	size_t count = 0;
 	returnArr[count++] = deepcopy(numbers, numsSize);
-	while (1)
+	while (permutate(numbers, numsSize))
 	{
-
+		if (count == capacity)
+		{
+			capacity <<= 1;
+			int** temp = (int**)realloc((void*)returnArr, sizeof(*returnArr) * capacity);
+			if (!temp)
+			{
+				printf("Error reallocating memory at capacity %z.\n", capacity);
+				return NULL;
+			}
+			returnArr = temp;
+		}
+		returnArr[count++] = deepcopy(numbers, numsSize);
 	}
 	free(numbers);
 	*returnSize = count;
