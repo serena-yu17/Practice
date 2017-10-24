@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  Subarray Product Less Than K.cpp
+Subarray Product Less Than K.cpp(12): warning C4227: anachronism used: qualifiers on reference are ignored
+Subarray Product Less Than K.cpp(17): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(24): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(50): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(60): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(64): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(68): warning C4018: '<': signed/unsigned mismatch
+Subarray Product Less Than K.cpp(73): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 309 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Subarray Product Less Than K.vcxproj -> C:\OneDrive\projects\Console\Practice\Subarray Product Less Than K\Release\Subarray Product Less Than K.exe
