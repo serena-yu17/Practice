@@ -1,10 +1,7 @@
 ﻿  Subarray Product Less Than K.cpp
 c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(12): warning C4227: anachronism used: qualifiers on reference are ignored
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(17): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(24): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(50): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(60): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(64): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(68): warning C4018: '<': signed/unsigned mismatch
-c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(73): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(35): warning C4244: 'argument': conversion from '__int64' to 'const int', possible loss of data
+c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\subarray product less than k\subarray product less than k\subarray product less than k.cpp(63): warning C4018: '<': signed/unsigned mismatch
   Subarray Product Less Than K.vcxproj -> C:\OneDrive\projects\Console\Practice\Subarray Product Less Than K\Debug\Subarray Product Less Than K.exe

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{E561058D-02B7-4F0A-80B5-D4E120BC1A1F}</ProjectGuid>
+    <ProjectGuid>{8FC71F07-C730-4EBC-82F1-5F5DA7FCF9D1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SubarrayProductLessThanK</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
