@@ -1,0 +1,6 @@
+﻿  Partition to K Equal Sum Subsets.cpp
+c:\onedrive\projects\console\practice\partition to k equal sum subsets\partition to k equal sum subsets\partition to k equal sum subsets.cpp(15): warning C4227: anachronism used: qualifiers on reference are ignored
+c:\onedrive\projects\console\practice\partition to k equal sum subsets\partition to k equal sum subsets\partition to k equal sum subsets.cpp(38): warning C4244: 'argument': conversion from '__int64' to 'const int', possible loss of data
+c:\onedrive\projects\console\practice\partition to k equal sum subsets\partition to k equal sum subsets\partition to k equal sum subsets.cpp(131): warning C4477: 'printf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+c:\onedrive\projects\console\practice\partition to k equal sum subsets\partition to k equal sum subsets\partition to k equal sum subsets.cpp(163): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+  Partition to K Equal Sum Subsets.vcxproj -> C:\OneDrive\projects\Console\Practice\Partition to K Equal Sum Subsets\Debug\Partition to K Equal Sum Subsets.exe
