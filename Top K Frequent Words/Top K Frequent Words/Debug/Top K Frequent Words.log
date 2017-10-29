@@ -1,0 +1,7 @@
+﻿  Top K Frequent Words.cpp
+c:\onedrive\projects\console\practice\top k frequent words\top k frequent words\top k frequent words.cpp(19): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\top k frequent words\top k frequent words\top k frequent words.cpp(22): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\top k frequent words\top k frequent words\top k frequent words.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\top k frequent words\top k frequent words\top k frequent words.cpp(53): warning C4018: '>': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\top k frequent words\top k frequent words\top k frequent words.cpp(60): warning C4018: '<': signed/unsigned mismatch
+  Top K Frequent Words.vcxproj -> C:\OneDrive\projects\Console\Practice\Top K Frequent Words\Debug\Top K Frequent Words.exe
