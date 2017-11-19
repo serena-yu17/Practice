@@ -23,10 +23,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="generate random array.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="generate random array.cpp">
+    <ClCompile Include="stdafx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
