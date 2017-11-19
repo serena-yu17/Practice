@@ -1,1 +1,0 @@
-A BFS solution to the n-queens puzzle

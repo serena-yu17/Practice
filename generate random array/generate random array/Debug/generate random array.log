@@ -1,0 +1,5 @@
+﻿  generate random array.cpp
+c:\onedrive\projects\console\practice\generate random array\generate random array\generate random array.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\onedrive\projects\console\practice\generate random array\generate random array\generate random array.cpp(32): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\onedrive\projects\console\practice\generate random array\generate random array\generate random array.cpp(28): warning C4715: 'digs': not all control paths return a value
+  generate random array.vcxproj -> C:\OneDrive\projects\Console\Practice\generate random array\Debug\generate random array.exe
