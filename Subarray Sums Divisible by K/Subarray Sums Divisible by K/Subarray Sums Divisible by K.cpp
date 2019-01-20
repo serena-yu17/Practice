@@ -14,16 +14,16 @@ int subarraysDivByK(vector<int>& A, int K) {
 	int sum = 0;
 	for (int i = 0; i < A.size(); i++) {
 		sum += A[i];
-		auto rem = (sum % K + K) % K;		
-			count += remainders[rem];
-			remainders[rem]++;
+		auto rem = (sum % K + K) % K;
+		count += remainders[rem];
+		remainders[rem]++;
 	}
 	return count;
 }
 
 int main()
 {
-	vector<int> array{ -2 };
-	int count = subarraysDivByK(array, 6);
+	vector<int> array{ 8, 9, 7, 8, 9 };
+	int count = subarraysDivByK(array, 8);
 	cout << count;
 }
