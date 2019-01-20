@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Subarray Sums Divisible by K", "Subarray Sums Divisible by K\Subarray Sums Divisible by K.vcxproj", "{2098E588-5355-4A65-8B9B-028BF88341C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Debug|x64.ActiveCfg = Debug|x64
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Debug|x64.Build.0 = Debug|x64
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Debug|x86.ActiveCfg = Debug|Win32
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Debug|x86.Build.0 = Debug|Win32
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Release|x64.ActiveCfg = Release|x64
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Release|x64.Build.0 = Release|x64
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Release|x86.ActiveCfg = Release|Win32
+		{2098E588-5355-4A65-8B9B-028BF88341C3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E77B8B8-C6BF-44E3-84B2-BD8A0226D265}
+	EndGlobalSection
+EndGlobal
